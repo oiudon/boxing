@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/oiudon/boxing/main/img-item01.jpg">
 <a href="https://ongakuriron.com/boxing">ボクシング適正階級AI判定</a>
 <h2>概要</h2>
-<p>年齢、身長、リーチ(両腕を開いたときの左手中指先端から右手中指先端までの長さ)を入力し、<br>ボクシングの適正階級を機械学習で割り出すWebアプリケーションです。</p>
+<p>年齢、身長、リーチ(両腕を開いたときの左手中指先端から右手中指先端までの長さ)を入力し、<br>ボクシングの適正階級を機械学習で割り出す（分類）Webアプリケーションです。</p>
 <p>このWebアプリの機械学習部分（データの用意～モデルの作成まで）をまとめました。</p>
 <h2>使用言語など</h2>
 <table>
@@ -39,6 +39,7 @@
     <td>ソースコードエディタ</td>
   </tr>
 </table>
+<p>機械学習部分ではPython、pandas、scikit-learn、Jupyter Notebookを使用しました。</p>
 <h2>使用方法</h2>
 <ol>
   <li>年齢、身長、リーチを入力。</li>
@@ -48,11 +49,13 @@
 <h2>データの用意</h2>
 <ol>
   <li>ボクシング専門誌「<a href="https://www.ringtv.com/ratings/">ザ・リング</a>」の各階級ランキングトップ10に入る選手を中心にデータを収集。</li>
-  <li>各選手のデータ(名前、年齢、身長、リーチ、スタイル、階級)をcsvファイルにまとめる。</li>
+  <li>各選手のデータ(名前、年齢、身長、リーチ、スタイル、階級)を.csvファイルにまとめる。</li>
 </ol>
 <h2>前処理～学習～検証～モデル作成</h2>
 <ol>
-  <li>Jupyter Notebookで作成したcsvファイルをDataFrameとして読み込む。</li>
+  <li>Jupyter Notebookで作成した.csvファイルをDataFrameとして読み込む。</li>
   <li>読み込んだDataFrameを特徴量（年齢、身長、リーチ）と正解データ（階級）に分割する。</li>
-  <li></li>
+  <li>scikit-learnのSVM（サポートベクターマシン）で学習～検証を繰り返し、精度を上げていく。</li>
+  <li>精度が確保できたらモデル（.pklファイル）として保存する。</li>
 </ol>
+<p>詳細は.ipynbファイルをご参照ください。</p>
