@@ -58,4 +58,4 @@
   <li>scikit-learnのSVM（サポートベクターマシン）で学習～検証を繰り返し、精度を上げていく。</li>
   <li>精度が確保できたらモデル（.pklファイル）として保存する。</li>
 </ol>
-<p>詳細は<a href="https://github.com/oiudon/boxing/blob/main/boxing.ipynb">boxing.ipynb</a>ファイルをご参照ください。</p>
+<p>詳細は<a href="https://github.com/oiudon/boxing/blob/main/boxing.ipynb">boxing.ipynb</a>をご参照ください。</p>
