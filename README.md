@@ -1,5 +1,5 @@
 <h1>ボクシング適正階級AI判定</h1>
-<img src="https://raw.githubusercontent.com/oiudon/boxing/main/img-item01.jpg">
+<img src="https://user-images.githubusercontent.com/125285302/226239070-d52120b1-070f-48c0-877f-5a7126b9bc36.jpg">
 <a href="https://ongakuriron.com/boxing">ボクシング適正階級AI判定</a>
 <h2>概要</h2>
 <p>年齢、身長、リーチ（両腕を開いたときの左手中指先端から右手中指先端までの長さ）を入力し、<br>ボクシングの適正階級を機械学習で割り出す（分類）Webアプリケーションです。</p>
@@ -45,7 +45,7 @@
   <li>年齢、身長、リーチを入力。</li>
   <li>「階級判定」ボタンを押す。</li>
 </ol>
-<img src="https://raw.githubusercontent.com/oiudon/boxing/main/img-item02.jpg">
+<img src="https://user-images.githubusercontent.com/125285302/226238926-3b489907-87e1-469d-a116-8e907f0a6379.jpg">
 <h2>データの準備</h2>
 <ol>
   <li>ボクシング専門誌「<a href="https://www.ringtv.com/ratings/">ザ・リング</a>」の各階級ランキングトップ10に入る選手を中心にデータを収集。</li>
